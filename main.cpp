@@ -19,12 +19,57 @@ CAN_MSG resvmsg;		// Message-Objekt auf dem Stack anlegen
 USART UART(8,0,1,9600);	// USART init 8 Zeichenbits , keien Paritätsbits , 1 Stoppbit, 9600 Zeichen pro Sekunde
 char buffer[150];		// Buffer zur Zwschischenspeicherung von Zeichenketten
 
+const uint16_t prescalers[7]= {1,8,32,64,128,256,1024};
+const uint8_t prescalers_bits[7]= {0x01,0x02,0x03,0x04,0x05,0x06,0x07};
+
+
+
+void beep(uint16_t freq)
+{
+	SET_BIT(DDRD,7); // PIND7 Output
+	if(freq==0) 
+	{
+		CLR_BIT(DDRD,7); 
+	return; 
+	}
+	if(freq< 32) freq = 31; // Min Frequenz = 31 Hz
+
+	uint32_t temp_OCR2=0; // 
+
+	for(uint8_t i =0; i< sizeof(prescalers);i++)
+	{
+		temp_OCR2= F_CPU/ ((uint32_t)prescalers[i]*freq*2);
+
+		if(temp_OCR2<256) // Wenn OCR2 kleiner 256 passenden Vorteiler nehmen
+		{
+			TCCR2= (TCCR2 & ~(0x07) |prescalers_bits[i]); // Prescaler setzen 
+			OCR2= (uint8_t) temp_OCR2;
+			break;
+
+		}
+
+
+	}
+	return;
+
+}
+
+
 int main ()
 {
 	DDRC = 0xFF;			// LED-Port: output
 	PORTC = 0x00;			// LEDs ein
     _delay_ms(500);
     PORTC = 0xFF;            // LEDs aus
+	
+
+	//Wave Form Generation Mode -> CTC+
+	CLR_BIT(TCCR2, WGM20);
+	SET_BIT(TCCR2,WGM21);
+
+	// Toggle OC2 on Compare Match
+		CLR_BIT(TCCR2, COM21);
+		SET_BIT(TCCR2, COM20);
     
 	
    	CAN_MSG sendmsg_LED;          // Message-Objekt auf dem Stack anlegen
@@ -58,7 +103,9 @@ int main ()
 		sendmsg_LED.data[1] = (UART.UsartGetc()-0x30);
 		// Prüfung auf Gültigkeit fehlt nur 0-7
 		can.CAN_Send(&sendmsg_LED);
+		beep(2000);
 		_delay_ms(100);
+		beep(0);
 		
 		
 	}
