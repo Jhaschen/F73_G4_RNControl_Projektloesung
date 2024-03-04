@@ -7,7 +7,7 @@
 
 //#define debug // Ausgabe der Botschaften
 
-#define adress 0x02 // Eigene eindeutige Addresse des RNControl Boards
+#define adress 0x02 // Eigene eindeutige Adresse des RNControl Boards
 
 Button B;
 uint8_t cnt=0;
