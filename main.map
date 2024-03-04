@@ -1,0 +1,870 @@
+Archive member included to satisfy reference by file (symbol)
+
+./avr-can-lib/src/libcan.a(mcp2515.o)
+                              obj/ATMega32_utility_bib.o (can_init)
+./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+                              obj/ATMega32_utility_bib.o (can_check_message)
+./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+                              obj/ATMega32_utility_bib.o (can_get_message)
+./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+                              obj/ATMega32_utility_bib.o (can_send_message)
+./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+                              ./avr-can-lib/src/libcan.a(mcp2515_send_message.o) (mcp2515_write_id)
+./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+                              ./avr-can-lib/src/libcan.a(mcp2515_get_message.o) (mcp2515_read_id)
+./avr-can-lib/src/libcan.a(spi.o)
+                              ./avr-can-lib/src/libcan.a(mcp2515.o) (mcp2515_spi_init)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                              obj/ATMega32_utility_bib.o (__udivmodsi4)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+                              /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o (exit)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+                              obj/main.o (__do_copy_data)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+                              obj/main.o (__do_clear_bss)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+                              obj/main.o (__do_global_ctors)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+                              /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o) (__tablejump2__)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strcpy.o)
+                              obj/main.o (strcpy)
+/opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strncpy.o)
+                              obj/ATMega32_utility_bib.o (strncpy)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+LOAD obj/main.o
+LOAD obj/ATMega32_utility_bib.o
+LOAD /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libm.a
+LOAD /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libm.a
+LOAD ./avr-can-lib/src/libcan.a
+START GROUP
+LOAD /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a
+LOAD /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libm.a
+LOAD /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a
+LOAD /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libatmega32.a
+END GROUP
+                0x0000000000020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x000000000000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x0000000000010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                0x0000000000000400                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x91e
+ *(.vectors)
+ .vectors       0x0000000000000000       0x54 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000054                . = ALIGN (0x2)
+                0x0000000000000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000054        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000054                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+ .progmem.data  0x0000000000000054       0x18 ./avr-can-lib/src/libcan.a(mcp2515.o)
+                0x0000000000000054                _mcp2515_cnf
+                0x000000000000006c                . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000006c                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000000000006c        0x2 obj/main.o
+                0x000000000000006e                __ctors_end = .
+                0x000000000000006e                __dtors_start = .
+ *(.dtors)
+                0x000000000000006e                __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000006e        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+                0x000000000000006e                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000006e        0xc /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000007a       0x16 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+                0x000000000000007a                __do_copy_data
+ .init4         0x0000000000000090       0x10 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+                0x0000000000000090                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00000000000000a0       0x16 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+                0x00000000000000a0                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000b6        0x8 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000be        0x4 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+                0x00000000000000be                __vector_20
+                0x00000000000000be                __vector_12
+                0x00000000000000be                __bad_interrupt
+                0x00000000000000be                __vector_6
+                0x00000000000000be                __vector_3
+                0x00000000000000be                __vector_11
+                0x00000000000000be                __vector_13
+                0x00000000000000be                __vector_17
+                0x00000000000000be                __vector_19
+                0x00000000000000be                __vector_7
+                0x00000000000000be                __vector_5
+                0x00000000000000be                __vector_4
+                0x00000000000000be                __vector_9
+                0x00000000000000be                __vector_2
+                0x00000000000000be                __vector_15
+                0x00000000000000be                __vector_8
+                0x00000000000000be                __vector_14
+                0x00000000000000be                __vector_16
+                0x00000000000000be                __vector_18
+                0x00000000000000be                __vector_1
+ .text          0x00000000000000c2       0xa2 obj/main.o
+                0x00000000000000c2                __vector_10
+ .text          0x0000000000000164      0x27c obj/ATMega32_utility_bib.o
+                0x0000000000000164                CAN::CAN(can_bitrate_t)
+                0x0000000000000164                CAN::CAN(can_bitrate_t)
+                0x000000000000016a                CAN::CAN_Send(CAN_MSG*)
+                0x00000000000001c4                CAN::CAN_Rec(CAN_MSG*)
+                0x000000000000022c                ADC_read::ADC_read(unsigned char)
+                0x000000000000022c                ADC_read::ADC_read(unsigned char)
+                0x0000000000000232                ADC_read::adcwert()
+                0x0000000000000252                Timer::Timer()
+                0x0000000000000252                Button::Button()
+                0x0000000000000252                Timer::Timer()
+                0x0000000000000252                Button::Button()
+                0x0000000000000254                Button::Button_read()
+                0x00000000000002ca                Timer::Timer_0_Overflow_ISR_init()
+                0x00000000000002da                Timer::Timer_0_Compare_ISR_init()
+                0x00000000000002ec                USART::USART(unsigned char, unsigned char, unsigned char, unsigned long)
+                0x00000000000002ec                USART::USART(unsigned char, unsigned char, unsigned char, unsigned long)
+                0x00000000000003aa                USART::UsartInit()
+                0x00000000000003ac                USART::UsartPutc(unsigned char)
+                0x00000000000003b4                USART::UsartPuts(char*)
+                0x00000000000003d8                USART::UsartGetc()
+ .text          0x00000000000003e0      0x15a ./avr-can-lib/src/libcan.a(mcp2515.o)
+                0x00000000000003e0                mcp2515_write_register
+                0x0000000000000404                mcp2515_read_register
+                0x0000000000000422                mcp2515_bit_modify
+                0x0000000000000452                mcp2515_read_status
+                0x0000000000000462                can_init
+ .text          0x000000000000053a       0x20 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+                0x000000000000053a                can_check_message
+                0x0000000000000546                can_check_free_buffer
+ .text          0x000000000000055a       0xaa ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+                0x000000000000055a                can_get_message
+ .text          0x0000000000000604       0x9a ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+                0x0000000000000604                can_send_message
+ .text          0x000000000000069e       0x30 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+                0x000000000000069e                mcp2515_write_id
+ .text          0x00000000000006ce       0x6a ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+                0x00000000000006ce                mcp2515_read_id
+ .text          0x0000000000000738       0x14 ./avr-can-lib/src/libcan.a(spi.o)
+                0x0000000000000738                mcp2515_spi_init
+                0x0000000000000742                spi_putc
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .text          0x000000000000074c        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strncpy.o)
+                0x000000000000074c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x000000000000074c      0x152 obj/main.o
+                0x000000000000074c                main
+ .text.libgcc.mul
+                0x000000000000089e        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x000000000000089e       0x44 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                0x000000000000089e                __udivmodsi4
+ .text.libgcc   0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000000008e2        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc   0x00000000000008e2        0xc /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+                0x00000000000008e2                __tablejump2__
+ .text.libgcc.prologue
+                0x00000000000008ee        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000000008ee        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000000008ee        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000000008ee        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .text.avr-libc
+                0x00000000000008ee        0xe /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strcpy.o)
+                0x00000000000008ee                strcpy
+ .text.avr-libc
+                0x00000000000008fc       0x1e /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strncpy.o)
+                0x00000000000008fc                strncpy
+                0x000000000000091a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000091a        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+                0x000000000000091a                exit
+                0x000000000000091a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000091a        0x4 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x000000000000091e                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+                0x000000000000091e                _etext = .
+
+.data           0x0000000000800060       0xaa load address 0x000000000000091e
+                0x0000000000800060                PROVIDE (__data_start = .)
+ *(.data)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ .data          0x0000000000800060        0x0 obj/main.o
+ .data          0x0000000000800060        0x0 obj/ATMega32_utility_bib.o
+ .data          0x0000000000800060        0x0 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .data          0x0000000000800060        0x0 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .data          0x0000000000800060        0x0 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .data          0x0000000000800060        0x0 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .data          0x0000000000800060        0x0 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .data          0x0000000000800060        0x0 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .data          0x0000000000800060        0x0 ./avr-can-lib/src/libcan.a(spi.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .data          0x0000000000800060        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strncpy.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x0000000000800060       0xaa obj/main.o
+ *(.gnu.linkonce.r*)
+                0x000000000080010a                . = ALIGN (0x2)
+                0x000000000080010a                _edata = .
+                0x000000000080010a                PROVIDE (__data_end = .)
+
+.bss            0x000000000080010a       0xb9
+                0x000000000080010a                PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x000000000080010a        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ .bss           0x000000000080010a       0xb9 obj/main.o
+                0x000000000080010a                buffer
+                0x00000000008001a0                UART
+                0x00000000008001a7                resvmsg
+                0x00000000008001b3                sendmsg_Button
+                0x00000000008001bf                can
+                0x00000000008001c1                cnt
+                0x00000000008001c2                B
+ .bss           0x00000000008001c3        0x0 obj/ATMega32_utility_bib.o
+ .bss           0x00000000008001c3        0x0 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .bss           0x00000000008001c3        0x0 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .bss           0x00000000008001c3        0x0 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .bss           0x00000000008001c3        0x0 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .bss           0x00000000008001c3        0x0 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .bss           0x00000000008001c3        0x0 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .bss           0x00000000008001c3        0x0 ./avr-can-lib/src/libcan.a(spi.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .bss           0x00000000008001c3        0x0 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strncpy.o)
+ *(.bss*)
+ *(COMMON)
+                0x00000000008001c3                PROVIDE (__bss_end = .)
+                0x000000000000091e                __data_load_start = LOADADDR (.data)
+                0x00000000000009c8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008001c3        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x00000000008001c3                _end = .
+                [!provide]                        PROVIDE (__heap_start = .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x26
+ *(.comment)
+ .comment       0x0000000000000000       0x26 obj/main.o
+                                         0x27 (size before relaxing)
+ .comment       0x0000000000000026       0x27 obj/ATMega32_utility_bib.o
+ .comment       0x0000000000000026       0x27 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .comment       0x0000000000000026       0x27 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .comment       0x0000000000000026       0x27 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .comment       0x0000000000000026       0x27 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .comment       0x0000000000000026       0x27 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .comment       0x0000000000000026       0x27 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .comment       0x0000000000000026       0x27 ./avr-can-lib/src/libcan.a(spi.o)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x3c /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x1f0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x30 obj/main.o
+ .debug_aranges
+                0x0000000000000030       0x20 obj/ATMega32_utility_bib.o
+ .debug_aranges
+                0x0000000000000050       0x20 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .debug_aranges
+                0x0000000000000070       0x20 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .debug_aranges
+                0x0000000000000090       0x20 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .debug_aranges
+                0x00000000000000b0       0x20 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .debug_aranges
+                0x00000000000000d0       0x20 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .debug_aranges
+                0x00000000000000f0       0x20 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .debug_aranges
+                0x0000000000000110       0x20 ./avr-can-lib/src/libcan.a(spi.o)
+ .debug_aranges
+                0x0000000000000130       0x20 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x0000000000000150       0x20 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .debug_aranges
+                0x0000000000000170       0x20 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x0000000000000190       0x20 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x00000000000001b0       0x20 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .debug_aranges
+                0x00000000000001d0       0x20 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x2cad
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x4e6 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ .debug_info    0x00000000000004e6      0xac4 obj/main.o
+ .debug_info    0x0000000000000faa      0xc3f obj/ATMega32_utility_bib.o
+ .debug_info    0x0000000000001be9      0x59c ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .debug_info    0x0000000000002185       0xe5 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .debug_info    0x000000000000226a      0x279 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .debug_info    0x00000000000024e3      0x2e5 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .debug_info    0x00000000000027c8      0x16a ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .debug_info    0x0000000000002932      0x1db ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .debug_info    0x0000000000002b0d       0xbc ./avr-can-lib/src/libcan.a(spi.o)
+ .debug_info    0x0000000000002bc9       0x26 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_info    0x0000000000002bef       0x26 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .debug_info    0x0000000000002c15       0x26 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .debug_info    0x0000000000002c3b       0x26 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .debug_info    0x0000000000002c61       0x26 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .debug_info    0x0000000000002c87       0x26 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+
+.debug_abbrev   0x0000000000000000     0x156e
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x4a3 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ .debug_abbrev  0x00000000000004a3      0x381 obj/main.o
+ .debug_abbrev  0x0000000000000824      0x423 obj/ATMega32_utility_bib.o
+ .debug_abbrev  0x0000000000000c47      0x1e7 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .debug_abbrev  0x0000000000000e2e       0xb2 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .debug_abbrev  0x0000000000000ee0      0x142 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .debug_abbrev  0x0000000000001022      0x1c6 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .debug_abbrev  0x00000000000011e8      0x142 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .debug_abbrev  0x000000000000132a      0x147 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .debug_abbrev  0x0000000000001471       0x85 ./avr-can-lib/src/libcan.a(spi.o)
+ .debug_abbrev  0x00000000000014f6       0x14 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x000000000000150a       0x14 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .debug_abbrev  0x000000000000151e       0x14 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .debug_abbrev  0x0000000000001532       0x14 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000000000001546       0x14 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .debug_abbrev  0x000000000000155a       0x14 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+
+.debug_line     0x0000000000000000     0x2130
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1d /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ .debug_line    0x000000000000001d      0x577 obj/main.o
+ .debug_line    0x0000000000000594      0x8e4 obj/ATMega32_utility_bib.o
+ .debug_line    0x0000000000000e78      0x489 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .debug_line    0x0000000000001301       0xf2 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .debug_line    0x00000000000013f3      0x2a6 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .debug_line    0x0000000000001699      0x2a0 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .debug_line    0x0000000000001939      0x138 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .debug_line    0x0000000000001a71      0x220 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .debug_line    0x0000000000001c91       0xf7 ./avr-can-lib/src/libcan.a(spi.o)
+ .debug_line    0x0000000000001d88      0x121 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_line    0x0000000000001ea9       0x61 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .debug_line    0x0000000000001f0a       0x97 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .debug_line    0x0000000000001fa1       0x85 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .debug_line    0x0000000000002026       0x91 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .debug_line    0x00000000000020b7       0x79 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+
+.debug_frame    0x0000000000000000      0x3fc
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0xa8 obj/main.o
+ .debug_frame   0x00000000000000a8      0x16c obj/ATMega32_utility_bib.o
+ .debug_frame   0x0000000000000214       0xa4 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .debug_frame   0x00000000000002b8       0x34 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .debug_frame   0x00000000000002ec       0x44 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .debug_frame   0x0000000000000330       0x40 ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .debug_frame   0x0000000000000370       0x24 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .debug_frame   0x0000000000000394       0x34 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .debug_frame   0x00000000000003c8       0x34 ./avr-can-lib/src/libcan.a(spi.o)
+
+.debug_str      0x0000000000000000      0xb32
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x196 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+ .debug_str     0x0000000000000196      0x512 obj/main.o
+                                        0x5b4 (size before relaxing)
+ .debug_str     0x00000000000006a8      0x15c obj/ATMega32_utility_bib.o
+                                        0x64b (size before relaxing)
+ .debug_str     0x0000000000000804      0x1d6 ./avr-can-lib/src/libcan.a(mcp2515.o)
+                                        0x338 (size before relaxing)
+ .debug_str     0x00000000000009da       0x27 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+                                        0x1e3 (size before relaxing)
+ .debug_str     0x0000000000000a01       0x2b ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+                                        0x21c (size before relaxing)
+ .debug_str     0x0000000000000a2c       0x3f ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+                                        0x25a (size before relaxing)
+ .debug_str     0x0000000000000a6b       0x26 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+                                        0x1d7 (size before relaxing)
+ .debug_str     0x0000000000000a91       0x18 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+                                        0x1db (size before relaxing)
+ .debug_str     0x0000000000000aa9        0x6 ./avr-can-lib/src/libcan.a(spi.o)
+                                        0x1ae (size before relaxing)
+ .debug_str     0x0000000000000aaf       0x83 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_str     0x0000000000000b32       0x83 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+ .debug_str     0x0000000000000b32       0x83 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+ .debug_str     0x0000000000000b32       0x83 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+ .debug_str     0x0000000000000b32       0x83 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+ .debug_str     0x0000000000000b32       0x83 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+
+.debug_loc      0x0000000000000000     0x1266
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x221 obj/main.o
+ .debug_loc     0x0000000000000221      0x737 obj/ATMega32_utility_bib.o
+ .debug_loc     0x0000000000000958      0x474 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .debug_loc     0x0000000000000dcc       0x15 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+ .debug_loc     0x0000000000000de1      0x179 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+ .debug_loc     0x0000000000000f5a      0x17a ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+ .debug_loc     0x00000000000010d4       0x66 ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+ .debug_loc     0x000000000000113a      0x109 ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+ .debug_loc     0x0000000000001243       0x23 ./avr-can-lib/src/libcan.a(spi.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x50
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x20 obj/main.o
+ .debug_ranges  0x0000000000000020       0x18 ./avr-can-lib/src/libcan.a(mcp2515.o)
+ .debug_ranges  0x0000000000000038       0x18 ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(main.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+ADC_read::ADC_read(unsigned char)                 obj/ATMega32_utility_bib.o
+ADC_read::ADC_read(unsigned char)                 obj/ATMega32_utility_bib.o
+ADC_read::adcwert()                               obj/ATMega32_utility_bib.o
+B                                                 obj/main.o
+Button::Button()                                  obj/ATMega32_utility_bib.o
+Button::Button()                                  obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+Button::Button_read()                             obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+CAN::CAN(can_bitrate_t)                           obj/ATMega32_utility_bib.o
+CAN::CAN(can_bitrate_t)                           obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+CAN::CAN_Rec(CAN_MSG*)                            obj/ATMega32_utility_bib.o
+CAN::CAN_Send(CAN_MSG*)                           obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+Timer::Timer()                                    obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+Timer::Timer()                                    obj/ATMega32_utility_bib.o
+Timer::Timer_0_Compare_ISR_init()                 obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+Timer::Timer_0_Overflow_ISR_init()                obj/ATMega32_utility_bib.o
+UART                                              obj/main.o
+USART::USART(unsigned char, unsigned char, unsigned char, unsigned long) obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+USART::USART(unsigned char, unsigned char, unsigned char, unsigned long) obj/ATMega32_utility_bib.o
+USART::UsartGetc()                                obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+USART::UsartInit()                                obj/ATMega32_utility_bib.o
+USART::UsartPutc(unsigned char)                   obj/ATMega32_utility_bib.o
+USART::UsartPuts(char*)                           obj/ATMega32_utility_bib.o
+                                                  obj/main.o
+__bad_interrupt                                   /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__bss_end                                         /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+__ctors_end                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+__ctors_start                                     /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+__data_end                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_clear_bss.o)
+                                                  obj/main.o
+__do_copy_data                                    /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_copy_data.o)
+                                                  obj/main.o
+__do_global_ctors                                 /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+                                                  obj/main.o
+__heap_end                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__init                                            /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__stack                                           /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__tablejump2__                                    /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_tablejump2.o)
+                                                  /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_ctors.o)
+__udivmodsi4                                      /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_udivmodsi4.o)
+                                                  obj/ATMega32_utility_bib.o
+__vector_1                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_10                                       obj/main.o
+                                                  /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_11                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_12                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_13                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_14                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_15                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_16                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_17                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_18                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_19                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_2                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_20                                       /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_3                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_4                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_5                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_6                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_7                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_8                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_9                                        /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vector_default                                  /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+__vectors                                         /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+_exit                                             /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+_mcp2515_cnf                                      ./avr-can-lib/src/libcan.a(mcp2515.o)
+buffer                                            obj/main.o
+can                                               obj/main.o
+can_check_free_buffer                             ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+can_check_message                                 ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+                                                  obj/ATMega32_utility_bib.o
+can_get_message                                   ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+                                                  obj/ATMega32_utility_bib.o
+can_init                                          ./avr-can-lib/src/libcan.a(mcp2515.o)
+                                                  obj/ATMega32_utility_bib.o
+can_send_message                                  ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+                                                  obj/ATMega32_utility_bib.o
+cnt                                               obj/main.o
+exit                                              /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/avr5/libgcc.a(_exit.o)
+                                                  /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+main                                              obj/main.o
+                                                  /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/crtatmega32.o
+mcp2515_bit_modify                                ./avr-can-lib/src/libcan.a(mcp2515.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+mcp2515_read_id                                   ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+mcp2515_read_register                             ./avr-can-lib/src/libcan.a(mcp2515.o)
+mcp2515_read_status                               ./avr-can-lib/src/libcan.a(mcp2515.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_buffer.o)
+mcp2515_spi_init                                  ./avr-can-lib/src/libcan.a(spi.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515.o)
+mcp2515_write_id                                  ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+mcp2515_write_register                            ./avr-can-lib/src/libcan.a(mcp2515.o)
+resvmsg                                           obj/main.o
+sendmsg_Button                                    obj/main.o
+spi_putc                                          ./avr-can-lib/src/libcan.a(spi.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_read_id.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_write_id.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_send_message.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515_get_message.o)
+                                                  ./avr-can-lib/src/libcan.a(mcp2515.o)
+strcpy                                            /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strcpy.o)
+                                                  obj/main.o
+strncpy                                           /opt/homebrew/Cellar/avr-gcc@9/9.3.0_3/lib/avr-gcc/9/gcc/avr/9.3.0/../../../../../../avr/lib/avr5/libc.a(strncpy.o)
+                                                  obj/ATMega32_utility_bib.o
