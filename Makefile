@@ -38,7 +38,7 @@
 #
 # To rebuild project do "make clean" then "make all".
 #----------------------------------------------------------------------------
-
+# Zeile 547/555 @mkdir -p $(@D)
 
 # MCU name
 MCU = atmega32
@@ -77,11 +77,11 @@ OBJDIR = obj
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC =
+SRC = lib/led.c lib/uart.c lib/button.c lib/counter.c lib/adc.c src/main.c
 
 
 # List C++ source files here. (C dependencies are automatically generated.)
-CPPSRC = main.cpp  ATMega32_utility_bib.cpp
+CPPSRC =
 
 
 # List Assembler source files here.
@@ -110,7 +110,8 @@ DEBUG = dwarf-2
 #     Each directory must be seperated by a space.
 #     Use forward slashes for directory separators.
 #     For a directory that has spaces, enclose it in quotes.
-EXTRAINCDIRS = avr-can-lib
+EXTRAINCDIRS = lib src /lib/avr-can-lib
+
 
 
 # Compiler flag to set the C Standard level.
@@ -184,6 +185,7 @@ CFLAGS += -Wundef
 #CPPFLAGS += -Wsign-compare
 CPPFLAGS += -Wa,-adhlns=$(<:%.cpp=$(OBJDIR)/%.lst)
 CPPFLAGS += $(patsubst %,-I%,$(EXTRAINCDIRS))
+CPPFLAGS += $(CPPSTANDARD)
 #CPPFLAGS += $(CSTANDARD)
 
 
@@ -250,7 +252,7 @@ LDFLAGS += $(PRINTF_LIB) $(SCANF_LIB) $(MATH_LIB)
 LDFLAGS += $(patsubst %,-L%,$(EXTRALIBDIRS))
 LDFLAGS += $(PRINTF_LIB) $(SCANF_LIB) $(MATH_LIB)
 
-LDFLAGS += -L./avr-can-lib/src -lcan	#CAN library
+LDFLAGS += -L./lib/avr-can-lib/src -lcan	#CAN library
 #LDFLAGS += -T linker_script.x
 
 
@@ -542,6 +544,7 @@ extcoff: $(TARGET).elf
 $(OBJDIR)/%.o : %.c
 	@echo
 	@echo $(MSG_COMPILING) $<
+	@mkdir -p $(@D)
 	$(CC) -c $(ALL_CFLAGS) $< -o $@
 
 
@@ -549,6 +552,7 @@ $(OBJDIR)/%.o : %.c
 $(OBJDIR)/%.o : %.cpp
 	@echo
 	@echo $(MSG_COMPILING_CPP) $<
+	@mkdir -p $(@D)
 	$(CC) -c $(ALL_CPPFLAGS) $< -o $@
 
 

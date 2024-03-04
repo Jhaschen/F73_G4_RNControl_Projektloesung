@@ -1,12 +1,17 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <stdio.h>
-
-#include "ATMega32_utility_bib.h"
+#include <avr/interrupt.h>
+#include "led.h"
+#include "uart.h"
+#include "counter.h"
+#include "button.h"
+#include "adc.h"
+#include "bitops.h"
 
 
 //#define debug // Ausgabe der Botschaften
-
+/*
 #define adress 0x02 // Eigene eindeutige Adresse des RNControl Boards
 
 Button B;
@@ -54,7 +59,7 @@ void beep(uint16_t freq)
 
 }
 
-
+*/
 int main ()
 {
 	DDRC = 0xFF;			// LED-Port: output
@@ -62,7 +67,7 @@ int main ()
     _delay_ms(500);
     PORTC = 0xFF;            // LEDs aus
 	
-
+/*
 	//Wave Form Generation Mode -> CTC+
 	CLR_BIT(TCCR2, WGM20);
 	SET_BIT(TCCR2,WGM21);
@@ -109,6 +114,7 @@ int main ()
 		
 		
 	}
+	*/
 	return 0;
 }
 
@@ -122,6 +128,7 @@ int main ()
 // TIMER0_COMP_vect: Information an den Compiler, mit welchem Interrupt
 //                  diese ISR verknüpft werden soll. Der Bezeichner "TIMER0_COM_vect"
 //                  ist wie alle anderen ISR-Bezeichner in "avr/interrupt.h" definiert.
+/*
 ISR(TIMER0_COMP_vect)
 {
 	cnt++;
@@ -149,3 +156,4 @@ ISR(TIMER0_COMP_vect)
  
  }
 
+*/
