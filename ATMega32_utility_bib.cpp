@@ -8,6 +8,52 @@
 
 #include "ATMega32_utility_bib.h"
 
+CAN::CAN(can_bitrate_t _Baudrate = BITRATE_500_KBPS)
+{
+can_init(_Baudrate);      // CAN init 500 kbit/
+
+}
+
+
+uint8_t CAN::CAN_Send(CAN_MSG *msg){
+  can_t msgsend;
+  msgsend.id=msg->id;
+  msgsend.length=msg->dlc;
+  msgsend.flags.rtr=msg->rtr;
+ strncpy( (char*)msgsend.data,(char*)msg->data,msgsend.length);
+
+ if(can_send_message(&msgsend))		// CAN-Nachricht versenden
+		{
+		
+		return(1);
+
+		}else{
+      return(0);
+    }
+		
+		
+
+}
+
+
+uint8_t CAN::CAN_Rec(CAN_MSG  *msg){
+  if(can_check_message()) // Prüfe, ob Nachricht empfangen wurde.
+	{
+	can_t msgrec;
+	can_get_message(&msgrec);
+  msg->id=msgrec.id;
+  msg->dlc=msgrec.length;
+  msg->rtr=msgrec.flags.rtr;
+ strncpy( (char*)msg->data,(char*)msgrec.data,msgrec.length);
+ return 1;
+
+
+  }else
+    return 0;
+
+}
+
+
 
 ADC_read::ADC_read(uint8_t _kanal):kanal(_kanal){}
 

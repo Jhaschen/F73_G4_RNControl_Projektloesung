@@ -16,7 +16,8 @@
 #include <avr/io.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
+#include "can.h"
 
 
 
@@ -36,6 +37,30 @@
 
 #define LED_DDR DDRC
 #define LED_PORT PORTC
+
+// CAN-INIT und Senden/ Empfang von Botschaften
+struct CAN_MSG
+{
+    uint8_t data[8];
+    uint16_t id;
+    uint8_t dlc;
+    uint8_t rtr=0;
+};
+
+
+class CAN{
+
+public:
+CAN(can_bitrate_t _Baudrate);
+uint8_t CAN_Send(CAN_MSG *msg);
+uint8_t CAN_Rec(CAN_MSG *msg);
+uint8_t CAN_Test(uint8_t msg);
+private:
+uint16_t Baudrate;
+
+};
+
+
 
 // ADC-INIT und Ansteuerung
 class ADC_read{
