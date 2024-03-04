@@ -3,6 +3,7 @@
 *.lss
 *.map
 *.sym
+main.elf
 *.elf
 
 
