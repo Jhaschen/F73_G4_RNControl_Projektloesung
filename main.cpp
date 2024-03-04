@@ -7,7 +7,7 @@
 
 //#define debug // Ausgabe der Botschaften
 
-#define adress 0x02 // Eigene eindeutige Adresse des RNControl Boards
+#define adress 0x01 // Eigene eindeutige Adresse des RNControl Boards
 
 Button B;
 uint8_t cnt=0;
@@ -30,7 +30,7 @@ int main ()
 	
    	can_t sendmsg_LED;          // Message-Objekt auf dem Stack anlegen
 	
-        sendmsg_LED.id = 0x74;          // ID setzen, hier: dec
+        sendmsg_LED.id = 0x72;          // ID setzen, hier: dec
         sendmsg_LED.flags.rtr = 0;      // Remote-Transmission-Request -> aus
         sendmsg_LED.length = 2;         // Länge der Nachricht: 2 Byte
 	
@@ -122,7 +122,7 @@ ISR(TIMER0_COMP_vect)
 	if((cnt==250)) // 25 x 1ms = 250ms  (Alle 250ms wird die Button Botschaft gesendet
 	{
 	
-	sendmsg_Button.id = 0x75;          // ID setzen, hier: dec
+	sendmsg_Button.id = 0x73;          // ID setzen, hier: dec
     sendmsg_Button.length = 2;         // Länge der Nachricht: 2 Byte
 	sendmsg_Button.data[0]= adress;     // Datenbyte 0 füllen
 	sendmsg_Button.data[1]=B.Button_read(); // Button Status in das Datenbyte 1 schreiben
