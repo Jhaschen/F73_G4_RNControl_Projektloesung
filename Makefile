@@ -542,6 +542,7 @@ extcoff: $(TARGET).elf
 $(OBJDIR)/%.o : %.c
 	@echo
 	@echo $(MSG_COMPILING) $<
+	@mkdir -p $(@D)
 	$(CC) -c $(ALL_CFLAGS) $< -o $@
 
 
@@ -549,6 +550,7 @@ $(OBJDIR)/%.o : %.c
 $(OBJDIR)/%.o : %.cpp
 	@echo
 	@echo $(MSG_COMPILING_CPP) $<
+	@mkdir -p $(@D)
 	$(CC) -c $(ALL_CPPFLAGS) $< -o $@
 
 
