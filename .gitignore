@@ -4,7 +4,11 @@
 *.map
 *.sym
 *.elf
-*.ELF
+*.log
+.dep/*
+obj/*
+.vscode
+
 
 
 
