@@ -9,5 +9,6 @@
 .dep/*
 obj/*
 .vscode
+c_cpp_properties.json
 
 
