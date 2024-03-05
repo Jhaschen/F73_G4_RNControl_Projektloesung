@@ -54,7 +54,6 @@ public:
 CAN(can_bitrate_t _Baudrate);
 uint8_t CAN_Send(CAN_MSG *msg);
 uint8_t CAN_Rec(CAN_MSG *msg);
-uint8_t CAN_Test(uint8_t msg);
 private:
 uint16_t Baudrate;
 

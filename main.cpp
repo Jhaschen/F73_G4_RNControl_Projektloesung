@@ -78,7 +78,7 @@ int main ()
 ISR(TIMER0_COMP_vect)
 {
 	cnt++;
-	//can.CAN_Rec(&resvmsg);
+	can.CAN_Rec(&resvmsg);
 	if(resvmsg.data[0]== adress) // Ist die Botschaft für dieses Board ?
 	{
 		TGL_BIT(PORTC,resvmsg.data[1]);  // Byte 1 auf die LEDs ausgeben ( umgekehrte Logik)
